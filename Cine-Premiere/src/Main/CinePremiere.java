@@ -4,6 +4,8 @@
  */
 package Main;
 
+import Interfaces.Inicio;
+
 /**
  *
  * @author USER
@@ -15,7 +17,9 @@ public class CinePremiere {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hola Leo");
+        Inicio inicio = new  Inicio();
+        inicio.setVisible(true);
+        inicio.setLocationRelativeTo(null);
     }
     
 }

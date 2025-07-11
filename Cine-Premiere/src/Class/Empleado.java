@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Clases_base;
+package Class;
+
+import Enumeradores.TipoDocumento;
 
 /**
  *
@@ -14,8 +16,8 @@ public class Empleado extends Persona {
     private String sucursal; // Es la unidad comercial que depende legal y operativamente de la sede central
     private boolean activo;
 
-    public Empleado(String id, String nombre, String apellido, String dni, String telefono, String email) {
-        super(id, nombre, apellido, dni, telefono, email);
+    public Empleado(String id, String nombre, String apellido, TipoDocumento tipoDoc, int numDoc, String telefono, String email) {
+        super(id, nombre, apellido, tipoDoc, numDoc, telefono, email);
 
         this.fechaIngreso = fechaIngreso;
         this.sucursal = sucursal;
@@ -46,9 +48,8 @@ public class Empleado extends Persona {
         this.activo = activo;
     }
 
-   
-    
-    
-    
-    
+    @Override
+    public String toString() {
+        return "Empleado{" + "fechaIngreso=" + fechaIngreso + ", sucursal=" + sucursal + ", activo=" + activo + '}';
+    }
 }

@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Clases_base;
+package Class;
+
+import Enumeradores.TipoDocumento;
 
 /**
  *
@@ -13,15 +15,17 @@ public abstract class Persona {
     protected String id;
     protected String nombre;
     protected String apellido;
-    protected String dni;
+    protected TipoDocumento tipoDoc;
+    protected int numDoc;
     protected String telefono;
     protected String email;
 
-    public Persona(String id, String nombre, String apellido, String dni, String telefono, String email) {
+    public Persona(String id, String nombre, String apellido, TipoDocumento tipoDoc, int numDoc, String telefono, String email) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dni = dni;
+        this.tipoDoc = tipoDoc;
+        this.numDoc = numDoc;
         this.telefono = telefono;
         this.email = email;
     }
@@ -51,12 +55,20 @@ public abstract class Persona {
         this.apellido = apellido;
     }
 
-    public String getDni() {
-        return dni;
+    public TipoDocumento getTipoDoc() {
+        return tipoDoc;
     }
 
-    public void setDni(String dni) {
-        this.dni = dni;
+    public void setTipoDoc(TipoDocumento tipoDoc) {
+        this.tipoDoc = tipoDoc;
+    }
+
+    public int getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(int numDoc) {
+        this.numDoc = numDoc;
     }
 
     public String getTelefono() {
@@ -81,7 +93,7 @@ public abstract class Persona {
 
     @Override
     public String toString() {
-        return "ID: " + id + ", Nombre: " + getNombreCompleto() + ", DNI: " + dni;
+        return "Persona{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", tipoDoc=" + tipoDoc + ", numDoc=" + numDoc + ", telefono=" + telefono + ", email=" + email + '}';
     }
 }
 
