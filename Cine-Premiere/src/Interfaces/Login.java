@@ -76,12 +76,12 @@ public class Login extends javax.swing.JFrame {
         jTextField1.setForeground(java.awt.Color.darkGray);
         jTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(125, 185, 200)));
         jTextField1.setOpaque(false);
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 250, -1));
+        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 250, 20));
 
         jPasswordField1.setForeground(java.awt.Color.darkGray);
         jPasswordField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(125, 185, 200)));
         jPasswordField1.setOpaque(false);
-        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 250, -1));
+        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 248, 250, 20));
 
         jButton1.setBackground(new java.awt.Color(15, 25, 45));
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
