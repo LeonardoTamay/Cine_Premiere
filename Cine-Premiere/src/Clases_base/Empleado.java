@@ -8,6 +8,47 @@ package Clases_base;
  *
  * @author leona
  */
-public class Empleado {
+public class Empleado extends Persona {
+
+    private String fechaIngreso;
+    private String sucursal; // Es la unidad comercial que depende legal y operativamente de la sede central
+    private boolean activo;
+
+    public Empleado(String id, String nombre, String apellido, String dni, String telefono, String email) {
+        super(id, nombre, apellido, dni, telefono, email);
+
+        this.fechaIngreso = fechaIngreso;
+        this.sucursal = sucursal;
+        this.activo = true;
+    }
+
+    public String getFechaIngreso() {
+        return fechaIngreso;
+    }
+
+    public void setFechaIngreso(String fechaIngreso) {
+        this.fechaIngreso = fechaIngreso;
+    }
+
+    public String getSucursal() {
+        return sucursal;
+    }
+
+    public void setSucursal(String sucursal) {
+        this.sucursal = sucursal;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
+    }
+
+   
+    
+    
+    
     
 }
