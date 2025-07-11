@@ -46,9 +46,8 @@ public class Empleado extends Persona {
         this.activo = activo;
     }
 
-   
-    
-    
-    
-    
+    @Override
+    public String toString() {
+        return "Empleado{" + "fechaIngreso=" + fechaIngreso + ", sucursal=" + sucursal + ", activo=" + activo + '}';
+    }
 }
