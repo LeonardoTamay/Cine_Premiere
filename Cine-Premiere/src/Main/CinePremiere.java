@@ -4,7 +4,7 @@
  */
 package Main;
 
-import Interfaces.Inicio;
+import vista.Inicio;
 
 /**
  *

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Interfaces;
+package vista;
 
 /**
  *
@@ -16,6 +16,7 @@ public class Cartelera extends javax.swing.JFrame {
     public Cartelera() {
         initComponents();
         setTitle("Cartelera de películas");
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -28,14 +29,18 @@ public class Cartelera extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jScrollPane1 = new javax.swing.JScrollPane();
         panelPrincipal = new javax.swing.JPanel();
         panelPelicula4 = new javax.swing.JPanel();
-        btnSiguiente5 = new javax.swing.JButton();
+        btnHorario4 = new javax.swing.JButton();
+        panelHorarios3 = new javax.swing.JPanel();
         panelPelicula3 = new javax.swing.JPanel();
-        btnSiguiente6 = new javax.swing.JButton();
+        btnHorario3 = new javax.swing.JButton();
+        panelHorarios2 = new javax.swing.JPanel();
         panelPelicula2 = new javax.swing.JPanel();
-        btnSiguiente7 = new javax.swing.JButton();
+        btnHorario2 = new javax.swing.JButton();
+        panelHorarios1 = new javax.swing.JPanel();
         generoPelicula2 = new javax.swing.JLabel();
         imagenPelicula1 = new javax.swing.JLabel();
         tituloPelicula1 = new javax.swing.JLabel();
@@ -48,113 +53,89 @@ public class Cartelera extends javax.swing.JFrame {
         imagenPelicula4 = new javax.swing.JLabel();
         tituloPelicula4 = new javax.swing.JLabel();
         generoPelicula4 = new javax.swing.JLabel();
-        panelPelicula1 = new javax.swing.JPanel();
+        panelDatos = new javax.swing.JPanel();
         comboCiudad1 = new javax.swing.JComboBox<>();
         comboCine1 = new javax.swing.JComboBox<>();
         comboFecha1 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        btnSiguiente1 = new javax.swing.JButton();
+        panelPelicula1 = new javax.swing.JPanel();
+        btnHorario1 = new javax.swing.JButton();
+        panelHorarios = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         panelPrincipal.setLayout(new java.awt.GridBagLayout());
 
-        btnSiguiente5.setText("Siguiente");
-        btnSiguiente5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnSiguiente5.addActionListener(new java.awt.event.ActionListener() {
+        panelPelicula4.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula4.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula4.setPreferredSize(new java.awt.Dimension(350, 200));
+        panelPelicula4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnHorario4.setText("Horarios:");
+        btnHorario4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnHorario4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguiente5ActionPerformed(evt);
+                btnHorario4ActionPerformed(evt);
             }
         });
+        panelPelicula4.add(btnHorario4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        javax.swing.GroupLayout panelPelicula4Layout = new javax.swing.GroupLayout(panelPelicula4);
-        panelPelicula4.setLayout(panelPelicula4Layout);
-        panelPelicula4Layout.setHorizontalGroup(
-            panelPelicula4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula4Layout.createSequentialGroup()
-                .addGap(163, 163, 163)
-                .addComponent(btnSiguiente5)
-                .addContainerGap(165, Short.MAX_VALUE))
-        );
-        panelPelicula4Layout.setVerticalGroup(
-            panelPelicula4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula4Layout.createSequentialGroup()
-                .addGap(122, 122, 122)
-                .addComponent(btnSiguiente5)
-                .addContainerGap(122, Short.MAX_VALUE))
-        );
+        panelHorarios3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
+        panelHorarios3.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
+        panelPelicula4.add(panelHorarios3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 12;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         panelPrincipal.add(panelPelicula4, gridBagConstraints);
 
-        btnSiguiente6.setText("Siguiente");
-        btnSiguiente6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnSiguiente6.addActionListener(new java.awt.event.ActionListener() {
+        panelPelicula3.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula3.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula3.setPreferredSize(new java.awt.Dimension(350, 200));
+        panelPelicula3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnHorario3.setText("Horarios:");
+        btnHorario3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnHorario3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguiente6ActionPerformed(evt);
+                btnHorario3ActionPerformed(evt);
             }
         });
+        panelPelicula3.add(btnHorario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        javax.swing.GroupLayout panelPelicula3Layout = new javax.swing.GroupLayout(panelPelicula3);
-        panelPelicula3.setLayout(panelPelicula3Layout);
-        panelPelicula3Layout.setHorizontalGroup(
-            panelPelicula3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula3Layout.createSequentialGroup()
-                .addGap(163, 163, 163)
-                .addComponent(btnSiguiente6)
-                .addContainerGap(165, Short.MAX_VALUE))
-        );
-        panelPelicula3Layout.setVerticalGroup(
-            panelPelicula3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula3Layout.createSequentialGroup()
-                .addGap(122, 122, 122)
-                .addComponent(btnSiguiente6)
-                .addContainerGap(122, Short.MAX_VALUE))
-        );
+        panelHorarios2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
+        panelHorarios2.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
+        panelPelicula3.add(panelHorarios2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 9;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         panelPrincipal.add(panelPelicula3, gridBagConstraints);
 
-        btnSiguiente7.setText("Siguiente");
-        btnSiguiente7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnSiguiente7.addActionListener(new java.awt.event.ActionListener() {
+        panelPelicula2.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula2.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula2.setPreferredSize(new java.awt.Dimension(350, 200));
+        panelPelicula2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnHorario2.setText("Horarios:");
+        btnHorario2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnHorario2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguiente7ActionPerformed(evt);
+                btnHorario2ActionPerformed(evt);
             }
         });
+        panelPelicula2.add(btnHorario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        javax.swing.GroupLayout panelPelicula2Layout = new javax.swing.GroupLayout(panelPelicula2);
-        panelPelicula2.setLayout(panelPelicula2Layout);
-        panelPelicula2Layout.setHorizontalGroup(
-            panelPelicula2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula2Layout.createSequentialGroup()
-                .addGap(163, 163, 163)
-                .addComponent(btnSiguiente7)
-                .addContainerGap(165, Short.MAX_VALUE))
-        );
-        panelPelicula2Layout.setVerticalGroup(
-            panelPelicula2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula2Layout.createSequentialGroup()
-                .addGap(141, 141, 141)
-                .addComponent(btnSiguiente7)
-                .addContainerGap(142, Short.MAX_VALUE))
-        );
+        panelHorarios1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
+        panelHorarios1.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
+        panelPelicula2.add(panelHorarios1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
-        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         panelPrincipal.add(panelPelicula2, gridBagConstraints);
 
         generoPelicula2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -286,7 +267,7 @@ public class Cartelera extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 10);
         panelPrincipal.add(generoPelicula4, gridBagConstraints);
 
-        panelPelicula1.setLayout(new java.awt.GridBagLayout());
+        panelDatos.setLayout(new java.awt.GridBagLayout());
 
         comboCiudad1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chimbote", "Trujillo", "Lima", "Chiclayo" }));
         comboCiudad1.addActionListener(new java.awt.event.ActionListener() {
@@ -298,25 +279,24 @@ public class Cartelera extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 114, 48, 0);
-        panelPelicula1.add(comboCiudad1, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(10, 40, 50, 0);
+        panelDatos.add(comboCiudad1, gridBagConstraints);
 
         comboCine1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 39, 48, 0);
-        panelPelicula1.add(comboCine1, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(10, 50, 50, 10);
+        panelDatos.add(comboCine1, gridBagConstraints);
 
         comboFecha1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 34, 48, 205);
-        panelPelicula1.add(comboFecha1, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(10, 50, 50, 10);
+        panelDatos.add(comboFecha1, gridBagConstraints);
 
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
@@ -327,8 +307,8 @@ public class Cartelera extends javax.swing.JFrame {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(8, 162, 0, 0);
-        panelPelicula1.add(jLabel1, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 10);
+        panelDatos.add(jLabel1, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -338,26 +318,31 @@ public class Cartelera extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.2;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
-        panelPrincipal.add(panelPelicula1, gridBagConstraints);
+        panelPrincipal.add(panelDatos, gridBagConstraints);
 
-        jPanel1.setLayout(new java.awt.GridBagLayout());
+        panelPelicula1.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula1.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula1.setPreferredSize(new java.awt.Dimension(350, 200));
+        panelPelicula1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnSiguiente1.setText("Siguiente");
-        btnSiguiente1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnSiguiente1.addActionListener(new java.awt.event.ActionListener() {
+        btnHorario1.setText("Horarios:");
+        btnHorario1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnHorario1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguiente1ActionPerformed(evt);
+                btnHorario1ActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        jPanel1.add(btnSiguiente1, gridBagConstraints);
+        panelPelicula1.add(btnHorario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        panelHorarios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
+        panelHorarios.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
+        panelPelicula1.add(panelHorarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
-        panelPrincipal.add(jPanel1, gridBagConstraints);
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        panelPrincipal.add(panelPelicula1, gridBagConstraints);
 
         jScrollPane1.setViewportView(panelPrincipal);
 
@@ -365,7 +350,7 @@ public class Cartelera extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -380,21 +365,21 @@ public class Cartelera extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_comboCiudad1ActionPerformed
 
-    private void btnSiguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente1ActionPerformed
+    private void btnHorario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSiguiente1ActionPerformed
+    }//GEN-LAST:event_btnHorario1ActionPerformed
 
-    private void btnSiguiente5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente5ActionPerformed
+    private void btnHorario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSiguiente5ActionPerformed
+    }//GEN-LAST:event_btnHorario2ActionPerformed
 
-    private void btnSiguiente6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente6ActionPerformed
+    private void btnHorario3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSiguiente6ActionPerformed
+    }//GEN-LAST:event_btnHorario3ActionPerformed
 
-    private void btnSiguiente7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente7ActionPerformed
+    private void btnHorario4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSiguiente7ActionPerformed
+    }//GEN-LAST:event_btnHorario4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -432,10 +417,11 @@ public class Cartelera extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSiguiente1;
-    private javax.swing.JButton btnSiguiente5;
-    private javax.swing.JButton btnSiguiente6;
-    private javax.swing.JButton btnSiguiente7;
+    private javax.swing.JButton btnHorario1;
+    private javax.swing.JButton btnHorario2;
+    private javax.swing.JButton btnHorario3;
+    private javax.swing.JButton btnHorario4;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox<String> comboCine1;
     private javax.swing.JComboBox<String> comboCiudad1;
     private javax.swing.JComboBox<String> comboFecha1;
@@ -448,8 +434,12 @@ public class Cartelera extends javax.swing.JFrame {
     private javax.swing.JLabel imagenPelicula3;
     private javax.swing.JLabel imagenPelicula4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPanel panelDatos;
+    private javax.swing.JPanel panelHorarios;
+    private javax.swing.JPanel panelHorarios1;
+    private javax.swing.JPanel panelHorarios2;
+    private javax.swing.JPanel panelHorarios3;
     private javax.swing.JPanel panelPelicula1;
     private javax.swing.JPanel panelPelicula2;
     private javax.swing.JPanel panelPelicula3;
