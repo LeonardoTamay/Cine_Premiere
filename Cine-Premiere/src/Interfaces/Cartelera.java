@@ -31,290 +31,159 @@ public class Cartelera extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         panelPrincipal = new javax.swing.JPanel();
         panelPelicula4 = new javax.swing.JPanel();
-        comboCiudad4 = new javax.swing.JComboBox<>();
-        comboCine4 = new javax.swing.JComboBox<>();
-        comboFecha4 = new javax.swing.JComboBox<>();
-        btnSiguiente4 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        btnSiguiente5 = new javax.swing.JButton();
         panelPelicula3 = new javax.swing.JPanel();
-        comboCiudad3 = new javax.swing.JComboBox<>();
-        comboCine3 = new javax.swing.JComboBox<>();
-        comboFecha3 = new javax.swing.JComboBox<>();
-        btnSiguiente3 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        btnSiguiente6 = new javax.swing.JButton();
         panelPelicula2 = new javax.swing.JPanel();
-        comboCiudad2 = new javax.swing.JComboBox<>();
-        comboCine2 = new javax.swing.JComboBox<>();
-        comboFecha2 = new javax.swing.JComboBox<>();
-        btnSiguiente2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        panelPelicula1 = new javax.swing.JPanel();
-        comboCiudad1 = new javax.swing.JComboBox<>();
-        comboCine1 = new javax.swing.JComboBox<>();
-        comboFecha1 = new javax.swing.JComboBox<>();
-        btnSiguiente1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        btnSiguiente7 = new javax.swing.JButton();
+        generoPelicula2 = new javax.swing.JLabel();
         imagenPelicula1 = new javax.swing.JLabel();
         tituloPelicula1 = new javax.swing.JLabel();
         generoPelicula1 = new javax.swing.JLabel();
         imagenPelicula2 = new javax.swing.JLabel();
         tituloPelicula2 = new javax.swing.JLabel();
-        generoPelicula2 = new javax.swing.JLabel();
         imagenPelicula3 = new javax.swing.JLabel();
         tituloPelicula3 = new javax.swing.JLabel();
         generoPelicula3 = new javax.swing.JLabel();
         imagenPelicula4 = new javax.swing.JLabel();
         tituloPelicula4 = new javax.swing.JLabel();
         generoPelicula4 = new javax.swing.JLabel();
+        panelPelicula1 = new javax.swing.JPanel();
+        comboCiudad1 = new javax.swing.JComboBox<>();
+        comboCine1 = new javax.swing.JComboBox<>();
+        comboFecha1 = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        btnSiguiente1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         panelPrincipal.setLayout(new java.awt.GridBagLayout());
 
-        comboCiudad4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chimbote", "Trujillo", "Lima", "Chiclayo" }));
-
-        comboCine4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        comboFecha4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        btnSiguiente4.setText("Siguiente");
-
-        jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("La función perfecta para ti.");
+        btnSiguiente5.setText("Siguiente");
+        btnSiguiente5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnSiguiente5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelPelicula4Layout = new javax.swing.GroupLayout(panelPelicula4);
         panelPelicula4.setLayout(panelPelicula4Layout);
         panelPelicula4Layout.setHorizontalGroup(
             panelPelicula4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPelicula4Layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(panelPelicula4Layout.createSequentialGroup()
-                .addGroup(panelPelicula4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelPelicula4Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSiguiente4, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelPelicula4Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(comboCiudad4, 0, 82, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboCine4, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboFecha4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addGap(163, 163, 163)
+                .addComponent(btnSiguiente5)
+                .addContainerGap(165, Short.MAX_VALUE))
         );
         panelPelicula4Layout.setVerticalGroup(
             panelPelicula4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPelicula4Layout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelPelicula4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboCiudad4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboCine4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboFecha4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
-                .addComponent(btnSiguiente4)
-                .addGap(44, 44, 44))
+                .addGap(122, 122, 122)
+                .addComponent(btnSiguiente5)
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridy = 12;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
         panelPrincipal.add(panelPelicula4, gridBagConstraints);
 
-        comboCiudad3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chimbote", "Trujillo", "Lima", "Chiclayo" }));
-
-        comboCine3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        comboFecha3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        btnSiguiente3.setText("Siguiente");
-
-        jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("La función perfecta para ti.");
+        btnSiguiente6.setText("Siguiente");
+        btnSiguiente6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnSiguiente6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelPelicula3Layout = new javax.swing.GroupLayout(panelPelicula3);
         panelPelicula3.setLayout(panelPelicula3Layout);
         panelPelicula3Layout.setHorizontalGroup(
             panelPelicula3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPelicula3Layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(panelPelicula3Layout.createSequentialGroup()
-                .addGroup(panelPelicula3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelPelicula3Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSiguiente3, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelPelicula3Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(comboCiudad3, 0, 82, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboCine3, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboFecha3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addGap(163, 163, 163)
+                .addComponent(btnSiguiente6)
+                .addContainerGap(165, Short.MAX_VALUE))
         );
         panelPelicula3Layout.setVerticalGroup(
             panelPelicula3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPelicula3Layout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelPelicula3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboCiudad3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboCine3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboFecha3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
-                .addComponent(btnSiguiente3)
-                .addGap(44, 44, 44))
+                .addGap(122, 122, 122)
+                .addComponent(btnSiguiente6)
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridy = 9;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
         panelPrincipal.add(panelPelicula3, gridBagConstraints);
 
-        comboCiudad2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chimbote", "Trujillo", "Lima", "Chiclayo" }));
-
-        comboCine2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        comboFecha2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        btnSiguiente2.setText("Siguiente");
-
-        jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("La función perfecta para ti.");
+        btnSiguiente7.setText("Siguiente");
+        btnSiguiente7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnSiguiente7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelPelicula2Layout = new javax.swing.GroupLayout(panelPelicula2);
         panelPelicula2.setLayout(panelPelicula2Layout);
         panelPelicula2Layout.setHorizontalGroup(
             panelPelicula2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPelicula2Layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(panelPelicula2Layout.createSequentialGroup()
-                .addGroup(panelPelicula2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelPelicula2Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(comboCiudad2, 0, 82, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboCine2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboFecha2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelPelicula2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSiguiente2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(53, Short.MAX_VALUE))
+                .addGap(163, 163, 163)
+                .addComponent(btnSiguiente7)
+                .addContainerGap(165, Short.MAX_VALUE))
         );
         panelPelicula2Layout.setVerticalGroup(
             panelPelicula2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelPelicula2Layout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelPelicula2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboCiudad2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboCine2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboFecha2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
-                .addComponent(btnSiguiente2)
-                .addGap(44, 44, 44))
+                .addGap(141, 141, 141)
+                .addComponent(btnSiguiente7)
+                .addContainerGap(142, Short.MAX_VALUE))
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridy = 6;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 0.5;
         panelPrincipal.add(panelPelicula2, gridBagConstraints);
 
-        comboCiudad1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chimbote", "Trujillo", "Lima", "Chiclayo" }));
-
-        comboCine1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        comboFecha1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        btnSiguiente1.setText("Siguiente");
-
-        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 204));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("La función perfecta para ti.");
-
-        javax.swing.GroupLayout panelPelicula1Layout = new javax.swing.GroupLayout(panelPelicula1);
-        panelPelicula1.setLayout(panelPelicula1Layout);
-        panelPelicula1Layout.setHorizontalGroup(
-            panelPelicula1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula1Layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(panelPelicula1Layout.createSequentialGroup()
-                .addGroup(panelPelicula1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelPelicula1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnSiguiente1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelPelicula1Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(comboCiudad1, 0, 82, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboCine1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboFecha1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(53, Short.MAX_VALUE))
-        );
-        panelPelicula1Layout.setVerticalGroup(
-            panelPelicula1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelPelicula1Layout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelPelicula1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboCiudad1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboCine1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboFecha1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
-                .addComponent(btnSiguiente1)
-                .addGap(44, 44, 44))
-        );
-
+        generoPelicula2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        generoPelicula2.setForeground(new java.awt.Color(15, 25, 45));
+        generoPelicula2.setText("Género: Acción");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 0.5;
-        gridBagConstraints.weighty = 0.2;
-        panelPrincipal.add(panelPelicula1, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 10);
+        panelPrincipal.add(generoPelicula2, gridBagConstraints);
 
         imagenPelicula1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pelicula1.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridy = 1;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 0);
         panelPrincipal.add(imagenPelicula1, gridBagConstraints);
 
-        tituloPelicula1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
+        tituloPelicula1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); // NOI18N
         tituloPelicula1.setForeground(new java.awt.Color(15, 25, 45));
         tituloPelicula1.setText("Título: Karate Kid Legends");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridy = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 10);
@@ -325,7 +194,7 @@ public class Cartelera extends javax.swing.JFrame {
         generoPelicula1.setText("Género: Drama");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 0.5;
@@ -335,42 +204,32 @@ public class Cartelera extends javax.swing.JFrame {
         imagenPelicula2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pelicula2.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridy = 4;
         gridBagConstraints.gridheight = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 0.5;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 0);
         panelPrincipal.add(imagenPelicula2, gridBagConstraints);
 
-        tituloPelicula2.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
+        tituloPelicula2.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); // NOI18N
         tituloPelicula2.setForeground(new java.awt.Color(15, 25, 45));
         tituloPelicula2.setText("Título: Misión Imposible Sentencia final");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.5;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 10);
-        panelPrincipal.add(tituloPelicula2, gridBagConstraints);
-
-        generoPelicula2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        generoPelicula2.setForeground(new java.awt.Color(15, 25, 45));
-        generoPelicula2.setText("Género: Acción");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 0.5;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 10);
-        panelPrincipal.add(generoPelicula2, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 10);
+        panelPrincipal.add(tituloPelicula2, gridBagConstraints);
 
         imagenPelicula3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pelicula3.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridy = 7;
         gridBagConstraints.gridheight = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 0.5;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(13, 10, 0, 0);
         panelPrincipal.add(imagenPelicula3, gridBagConstraints);
 
         tituloPelicula3.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
@@ -378,7 +237,7 @@ public class Cartelera extends javax.swing.JFrame {
         tituloPelicula3.setText("Título: Superman");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridy = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 10);
@@ -389,7 +248,7 @@ public class Cartelera extends javax.swing.JFrame {
         generoPelicula3.setText("Género: Superhéroes");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridy = 8;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 10);
@@ -398,10 +257,10 @@ public class Cartelera extends javax.swing.JFrame {
         imagenPelicula4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pelicula4.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridy = 10;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.weightx = 0.5;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 0);
         panelPrincipal.add(imagenPelicula4, gridBagConstraints);
 
         tituloPelicula4.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
@@ -409,10 +268,10 @@ public class Cartelera extends javax.swing.JFrame {
         tituloPelicula4.setText("Título: Jurassic World");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridy = 10;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
-        gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 0);
         panelPrincipal.add(tituloPelicula4, gridBagConstraints);
 
         generoPelicula4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -420,12 +279,85 @@ public class Cartelera extends javax.swing.JFrame {
         generoPelicula4.setText("Género: Acción");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridy = 11;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 0, 10);
         panelPrincipal.add(generoPelicula4, gridBagConstraints);
+
+        panelPelicula1.setLayout(new java.awt.GridBagLayout());
+
+        comboCiudad1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chimbote", "Trujillo", "Lima", "Chiclayo" }));
+        comboCiudad1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboCiudad1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 114, 48, 0);
+        panelPelicula1.add(comboCiudad1, gridBagConstraints);
+
+        comboCine1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 39, 48, 0);
+        panelPelicula1.add(comboCine1, gridBagConstraints);
+
+        comboFecha1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 34, 48, 205);
+        panelPelicula1.add(comboFecha1, gridBagConstraints);
+
+        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("La función perfecta para ti.");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(8, 162, 0, 0);
+        panelPelicula1.add(jLabel1, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
+        panelPrincipal.add(panelPelicula1, gridBagConstraints);
+
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+
+        btnSiguiente1.setText("Siguiente");
+        btnSiguiente1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnSiguiente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguiente1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        jPanel1.add(btnSiguiente1, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        panelPrincipal.add(jPanel1, gridBagConstraints);
 
         jScrollPane1.setViewportView(panelPrincipal);
 
@@ -433,19 +365,36 @@ public class Cartelera extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 652, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void comboCiudad1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboCiudad1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboCiudad1ActionPerformed
+
+    private void btnSiguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSiguiente1ActionPerformed
+
+    private void btnSiguiente5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSiguiente5ActionPerformed
+
+    private void btnSiguiente6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSiguiente6ActionPerformed
+
+    private void btnSiguiente7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiente7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSiguiente7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -484,21 +433,12 @@ public class Cartelera extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSiguiente1;
-    private javax.swing.JButton btnSiguiente2;
-    private javax.swing.JButton btnSiguiente3;
-    private javax.swing.JButton btnSiguiente4;
+    private javax.swing.JButton btnSiguiente5;
+    private javax.swing.JButton btnSiguiente6;
+    private javax.swing.JButton btnSiguiente7;
     private javax.swing.JComboBox<String> comboCine1;
-    private javax.swing.JComboBox<String> comboCine2;
-    private javax.swing.JComboBox<String> comboCine3;
-    private javax.swing.JComboBox<String> comboCine4;
     private javax.swing.JComboBox<String> comboCiudad1;
-    private javax.swing.JComboBox<String> comboCiudad2;
-    private javax.swing.JComboBox<String> comboCiudad3;
-    private javax.swing.JComboBox<String> comboCiudad4;
     private javax.swing.JComboBox<String> comboFecha1;
-    private javax.swing.JComboBox<String> comboFecha2;
-    private javax.swing.JComboBox<String> comboFecha3;
-    private javax.swing.JComboBox<String> comboFecha4;
     private javax.swing.JLabel generoPelicula1;
     private javax.swing.JLabel generoPelicula2;
     private javax.swing.JLabel generoPelicula3;
@@ -508,9 +448,7 @@ public class Cartelera extends javax.swing.JFrame {
     private javax.swing.JLabel imagenPelicula3;
     private javax.swing.JLabel imagenPelicula4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel panelPelicula1;
     private javax.swing.JPanel panelPelicula2;

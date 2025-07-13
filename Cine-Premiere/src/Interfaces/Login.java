@@ -62,12 +62,10 @@ public class Login extends javax.swing.JFrame {
         SignIn.setText("Sign In");
         jPanel2.add(SignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
 
-        jLabel25.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(30, 90, 130));
-        jLabel25.setText("Usuario:");
+        jLabel25.setText("Correo");
         jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, -1, -1));
 
-        jLabel26.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(30, 90, 130));
         jLabel26.setText("Contraseña:");
         jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, -1, -1));
@@ -75,12 +73,10 @@ public class Login extends javax.swing.JFrame {
         jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField1.setForeground(java.awt.Color.darkGray);
         jTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(125, 185, 200)));
-        jTextField1.setOpaque(false);
         jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 250, 20));
 
         jPasswordField1.setForeground(java.awt.Color.darkGray);
         jPasswordField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(125, 185, 200)));
-        jPasswordField1.setOpaque(false);
         jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 248, 250, 20));
 
         jButton1.setBackground(new java.awt.Color(15, 25, 45));
