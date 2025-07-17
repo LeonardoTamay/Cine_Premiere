@@ -32,15 +32,6 @@ public class Cartelera extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         jScrollPane1 = new javax.swing.JScrollPane();
         panelPrincipal = new javax.swing.JPanel();
-        panelPelicula4 = new javax.swing.JPanel();
-        btnHorario4 = new javax.swing.JButton();
-        panelHorarios3 = new javax.swing.JPanel();
-        panelPelicula3 = new javax.swing.JPanel();
-        btnHorario3 = new javax.swing.JButton();
-        panelHorarios2 = new javax.swing.JPanel();
-        panelPelicula2 = new javax.swing.JPanel();
-        btnHorario2 = new javax.swing.JButton();
-        panelHorarios1 = new javax.swing.JPanel();
         generoPelicula2 = new javax.swing.JLabel();
         imagenPelicula1 = new javax.swing.JLabel();
         tituloPelicula1 = new javax.swing.JLabel();
@@ -58,85 +49,55 @@ public class Cartelera extends javax.swing.JFrame {
         comboCine1 = new javax.swing.JComboBox<>();
         comboFecha1 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
+        panelPelicula3 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        panelPelicula2 = new javax.swing.JPanel();
+        jButton9 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jButton12 = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        panelPelicula7 = new javax.swing.JPanel();
+        jButton13 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        jButton14 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jButton15 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        jButton16 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        panelPelicula4 = new javax.swing.JPanel();
+        jButton17 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jButton18 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jButton19 = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
+        jButton20 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
         panelPelicula1 = new javax.swing.JPanel();
-        btnHorario1 = new javax.swing.JButton();
-        panelHorarios = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         panelPrincipal.setLayout(new java.awt.GridBagLayout());
-
-        panelPelicula4.setMaximumSize(new java.awt.Dimension(350, 200));
-        panelPelicula4.setMinimumSize(new java.awt.Dimension(350, 200));
-        panelPelicula4.setPreferredSize(new java.awt.Dimension(350, 200));
-        panelPelicula4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnHorario4.setText("Horarios:");
-        btnHorario4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnHorario4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHorario4ActionPerformed(evt);
-            }
-        });
-        panelPelicula4.add(btnHorario4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
-
-        panelHorarios3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
-        panelHorarios3.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
-        panelPelicula4.add(panelHorarios3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 12;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        panelPrincipal.add(panelPelicula4, gridBagConstraints);
-
-        panelPelicula3.setMaximumSize(new java.awt.Dimension(350, 200));
-        panelPelicula3.setMinimumSize(new java.awt.Dimension(350, 200));
-        panelPelicula3.setPreferredSize(new java.awt.Dimension(350, 200));
-        panelPelicula3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnHorario3.setText("Horarios:");
-        btnHorario3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnHorario3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHorario3ActionPerformed(evt);
-            }
-        });
-        panelPelicula3.add(btnHorario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
-
-        panelHorarios2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
-        panelHorarios2.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
-        panelPelicula3.add(panelHorarios2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 9;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        panelPrincipal.add(panelPelicula3, gridBagConstraints);
-
-        panelPelicula2.setMaximumSize(new java.awt.Dimension(350, 200));
-        panelPelicula2.setMinimumSize(new java.awt.Dimension(350, 200));
-        panelPelicula2.setPreferredSize(new java.awt.Dimension(350, 200));
-        panelPelicula2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnHorario2.setText("Horarios:");
-        btnHorario2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnHorario2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHorario2ActionPerformed(evt);
-            }
-        });
-        panelPelicula2.add(btnHorario2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
-
-        panelHorarios1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
-        panelHorarios1.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
-        panelPelicula2.add(panelHorarios1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
-        panelPrincipal.add(panelPelicula2, gridBagConstraints);
 
         generoPelicula2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         generoPelicula2.setForeground(new java.awt.Color(15, 25, 45));
@@ -320,28 +281,222 @@ public class Cartelera extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
         panelPrincipal.add(panelDatos, gridBagConstraints);
 
-        panelPelicula1.setMaximumSize(new java.awt.Dimension(350, 200));
-        panelPelicula1.setMinimumSize(new java.awt.Dimension(350, 200));
-        panelPelicula1.setPreferredSize(new java.awt.Dimension(350, 200));
-        panelPelicula1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelPelicula3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 204)));
+        panelPelicula3.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula3.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula3.setPreferredSize(new java.awt.Dimension(325, 200));
+        panelPelicula3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnHorario1.setText("Horarios:");
-        btnHorario1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnHorario1.addActionListener(new java.awt.event.ActionListener() {
+        jButton5.setText("3:45 - 5:45");
+        jButton5.setMaximumSize(new java.awt.Dimension(80, 24));
+        jButton5.setMinimumSize(new java.awt.Dimension(80, 24));
+        jButton5.setPreferredSize(new java.awt.Dimension(80, 24));
+        panelPelicula3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, -1, -1));
+
+        jButton6.setText("6:00 - 8:00");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHorario1ActionPerformed(evt);
+                jButton6ActionPerformed(evt);
             }
         });
-        panelPelicula1.add(btnHorario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        panelPelicula3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 90, -1));
 
-        panelHorarios.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102)));
-        panelHorarios.setLayout(new java.awt.GridLayout(0, 3, 5, 5));
-        panelPelicula1.add(panelHorarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 220, 180));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+
+        jButton7.setText("8:15 - 10:15");
+        panelPelicula3.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 90, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+
+        jButton8.setText("10:30 - 00:30");
+        panelPelicula3.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 90, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 10, 10, 0);
+        panelPrincipal.add(panelPelicula3, gridBagConstraints);
+
+        panelPelicula2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 204)));
+        panelPelicula2.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton9.setText("3:45 - 5:45");
+        jButton9.setMaximumSize(new java.awt.Dimension(80, 24));
+        jButton9.setMinimumSize(new java.awt.Dimension(80, 24));
+        jButton9.setPreferredSize(new java.awt.Dimension(80, 24));
+        panelPelicula2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, -1, -1));
+
+        jButton10.setText("6:00 - 8:00");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        panelPelicula2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 90, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+
+        jButton11.setText("8:15 - 10:15");
+        panelPelicula2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 90, -1));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+
+        jButton12.setText("10:30 - 00:30");
+        panelPelicula2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 90, -1));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
+
+        panelPelicula7.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 204)));
+        panelPelicula7.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula7.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula7.setPreferredSize(new java.awt.Dimension(325, 200));
+        panelPelicula7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton13.setText("3:45 - 5:45");
+        jButton13.setMaximumSize(new java.awt.Dimension(80, 24));
+        jButton13.setMinimumSize(new java.awt.Dimension(80, 24));
+        jButton13.setPreferredSize(new java.awt.Dimension(80, 24));
+        panelPelicula7.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, -1));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula7.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, -1, -1));
+
+        jButton14.setText("6:00 - 8:00");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        panelPelicula7.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 90, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula7.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+
+        jButton15.setText("8:15 - 10:15");
+        panelPelicula7.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 90, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula7.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+
+        jButton16.setText("10:30 - 00:30");
+        panelPelicula7.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 90, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula7.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
+
+        panelPelicula2.add(panelPelicula7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 10, 10, 0);
+        panelPrincipal.add(panelPelicula2, gridBagConstraints);
+
+        panelPelicula4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 204)));
+        panelPelicula4.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula4.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula4.setPreferredSize(new java.awt.Dimension(325, 200));
+        panelPelicula4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton17.setText("3:45 - 5:45");
+        jButton17.setMaximumSize(new java.awt.Dimension(80, 24));
+        jButton17.setMinimumSize(new java.awt.Dimension(80, 24));
+        jButton17.setPreferredSize(new java.awt.Dimension(80, 24));
+        panelPelicula4.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, -1, -1));
+
+        jButton18.setText("6:00 - 8:00");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        panelPelicula4.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 90, -1));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula4.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+
+        jButton19.setText("8:15 - 10:15");
+        panelPelicula4.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 90, -1));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula4.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+
+        jButton20.setText("10:30 - 00:30");
+        panelPelicula4.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 90, -1));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula4.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 10, 10, 0);
+        panelPrincipal.add(panelPelicula4, gridBagConstraints);
+
+        panelPelicula1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 204)));
+        panelPelicula1.setMaximumSize(new java.awt.Dimension(350, 200));
+        panelPelicula1.setMinimumSize(new java.awt.Dimension(350, 200));
+        panelPelicula1.setPreferredSize(new java.awt.Dimension(325, 200));
+        panelPelicula1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setText("3:45 - 5:45");
+        jButton1.setMaximumSize(new java.awt.Dimension(80, 24));
+        jButton1.setMinimumSize(new java.awt.Dimension(80, 24));
+        jButton1.setPreferredSize(new java.awt.Dimension(80, 24));
+        panelPelicula1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 90, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, -1, -1));
+
+        jButton2.setText("6:00 - 8:00");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        panelPelicula1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 90, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+
+        jButton3.setText("8:15 - 10:15");
+        panelPelicula1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 90, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+
+        jButton4.setText("10:30 - 00:30");
+        panelPelicula1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 90, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/sofa.png"))); // NOI18N
+        panelPelicula1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, -1, -1));
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 10, 10, 0);
         panelPrincipal.add(panelPelicula1, gridBagConstraints);
 
         jScrollPane1.setViewportView(panelPrincipal);
@@ -365,21 +520,25 @@ public class Cartelera extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_comboCiudad1ActionPerformed
 
-    private void btnHorario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnHorario1ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void btnHorario2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario2ActionPerformed
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnHorario2ActionPerformed
+    }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void btnHorario3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario3ActionPerformed
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnHorario3ActionPerformed
+    }//GEN-LAST:event_jButton10ActionPerformed
 
-    private void btnHorario4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHorario4ActionPerformed
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnHorario4ActionPerformed
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -417,10 +576,6 @@ public class Cartelera extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnHorario1;
-    private javax.swing.JButton btnHorario2;
-    private javax.swing.JButton btnHorario3;
-    private javax.swing.JButton btnHorario4;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox<String> comboCine1;
     private javax.swing.JComboBox<String> comboCiudad1;
@@ -433,17 +588,54 @@ public class Cartelera extends javax.swing.JFrame {
     private javax.swing.JLabel imagenPelicula2;
     private javax.swing.JLabel imagenPelicula3;
     private javax.swing.JLabel imagenPelicula4;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel panelDatos;
-    private javax.swing.JPanel panelHorarios;
-    private javax.swing.JPanel panelHorarios1;
-    private javax.swing.JPanel panelHorarios2;
-    private javax.swing.JPanel panelHorarios3;
     private javax.swing.JPanel panelPelicula1;
     private javax.swing.JPanel panelPelicula2;
     private javax.swing.JPanel panelPelicula3;
     private javax.swing.JPanel panelPelicula4;
+    private javax.swing.JPanel panelPelicula7;
     private javax.swing.JPanel panelPrincipal;
     private javax.swing.JLabel tituloPelicula1;
     private javax.swing.JLabel tituloPelicula2;

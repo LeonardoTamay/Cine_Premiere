@@ -31,40 +31,322 @@ public class SelecciónButacas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        lblTitulo = new javax.swing.JLabel();
+        lblCine = new javax.swing.JLabel();
+        lblFecha = new javax.swing.JLabel();
+        lblHora = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        btnAsiento1 = new javax.swing.JButton();
+        btnAsiento2 = new javax.swing.JButton();
+        btnAsiento3 = new javax.swing.JButton();
+        btnAsiento4 = new javax.swing.JButton();
+        btnAsiento5 = new javax.swing.JButton();
+        btnAsiento6 = new javax.swing.JButton();
+        btnAsiento7 = new javax.swing.JButton();
+        btnAsiento8 = new javax.swing.JButton();
+        btnAsiento9 = new javax.swing.JButton();
+        btnAsiento10 = new javax.swing.JButton();
+        btnAsiento11 = new javax.swing.JButton();
+        btnAsiento12 = new javax.swing.JButton();
+        btnAsiento13 = new javax.swing.JButton();
+        btnAsiento14 = new javax.swing.JButton();
+        btnAsiento15 = new javax.swing.JButton();
+        btnAsiento16 = new javax.swing.JButton();
+        btnAsiento17 = new javax.swing.JButton();
+        btnAsiento18 = new javax.swing.JButton();
+        btnAsiento19 = new javax.swing.JButton();
+        btnAsiento20 = new javax.swing.JButton();
+        btnAsiento21 = new javax.swing.JButton();
+        btnAsiento22 = new javax.swing.JButton();
+        btnAsiento23 = new javax.swing.JButton();
+        btnAsiento24 = new javax.swing.JButton();
+        btnAsiento25 = new javax.swing.JButton();
+        btnAsiento26 = new javax.swing.JButton();
+        btnAsiento27 = new javax.swing.JButton();
+        btnAsiento28 = new javax.swing.JButton();
+        btnAsiento29 = new javax.swing.JButton();
+        btnAsiento30 = new javax.swing.JButton();
+        btnAsiento31 = new javax.swing.JButton();
+        btnAsiento32 = new javax.swing.JButton();
+        btnAsiento33 = new javax.swing.JButton();
+        btnAsiento34 = new javax.swing.JButton();
+        btnAsiento35 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        lblAdulto = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        lblAdultoMayor = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        lblNiños = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+
+        jLabel2.setText("jLabel2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1200, 800));
+        setMaximumSize(new java.awt.Dimension(930, 800));
+        setMinimumSize(new java.awt.Dimension(930, 800));
+        setPreferredSize(new java.awt.Dimension(930, 800));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         jPanel1.setMaximumSize(new java.awt.Dimension(300, 800));
         jPanel1.setMinimumSize(new java.awt.Dimension(300, 800));
         jPanel1.setPreferredSize(new java.awt.Dimension(300, 800));
+        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.Y_AXIS));
 
-        jLabel1.setText("Pelícual:");
+        lblTitulo.setText("jLabel3");
+        jPanel1.add(lblTitulo);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addComponent(jLabel1)
-                .addContainerGap(143, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jLabel1)
-                .addContainerGap(713, Short.MAX_VALUE))
-        );
+        lblCine.setText("jLabel4");
+        jPanel1.add(lblCine);
+
+        lblFecha.setText("jLabel5");
+        jPanel1.add(lblFecha);
+
+        lblHora.setText("jLabel6");
+        jPanel1.add(lblHora);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.LINE_START);
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new java.awt.GridLayout(5, 6, 6, 5));
+
+        btnAsiento1.setEnabled(false);
+        jPanel2.add(btnAsiento1);
+
+        btnAsiento2.setEnabled(false);
+        jPanel2.add(btnAsiento2);
+
+        btnAsiento3.setEnabled(false);
+        jPanel2.add(btnAsiento3);
+
+        btnAsiento4.setEnabled(false);
+        jPanel2.add(btnAsiento4);
+
+        btnAsiento5.setEnabled(false);
+        jPanel2.add(btnAsiento5);
+
+        btnAsiento6.setEnabled(false);
+        jPanel2.add(btnAsiento6);
+
+        btnAsiento7.setEnabled(false);
+        jPanel2.add(btnAsiento7);
+
+        btnAsiento8.setEnabled(false);
+        jPanel2.add(btnAsiento8);
+
+        btnAsiento9.setEnabled(false);
+        jPanel2.add(btnAsiento9);
+
+        btnAsiento10.setEnabled(false);
+        jPanel2.add(btnAsiento10);
+
+        btnAsiento11.setEnabled(false);
+        jPanel2.add(btnAsiento11);
+
+        btnAsiento12.setEnabled(false);
+        jPanel2.add(btnAsiento12);
+
+        btnAsiento13.setEnabled(false);
+        jPanel2.add(btnAsiento13);
+
+        btnAsiento14.setEnabled(false);
+        jPanel2.add(btnAsiento14);
+
+        btnAsiento15.setEnabled(false);
+        jPanel2.add(btnAsiento15);
+
+        btnAsiento16.setEnabled(false);
+        jPanel2.add(btnAsiento16);
+
+        btnAsiento17.setEnabled(false);
+        jPanel2.add(btnAsiento17);
+
+        btnAsiento18.setEnabled(false);
+        jPanel2.add(btnAsiento18);
+
+        btnAsiento19.setEnabled(false);
+        jPanel2.add(btnAsiento19);
+
+        btnAsiento20.setEnabled(false);
+        jPanel2.add(btnAsiento20);
+
+        btnAsiento21.setEnabled(false);
+        jPanel2.add(btnAsiento21);
+
+        btnAsiento22.setEnabled(false);
+        jPanel2.add(btnAsiento22);
+
+        btnAsiento23.setEnabled(false);
+        jPanel2.add(btnAsiento23);
+
+        btnAsiento24.setEnabled(false);
+        jPanel2.add(btnAsiento24);
+
+        btnAsiento25.setEnabled(false);
+        jPanel2.add(btnAsiento25);
+
+        btnAsiento26.setEnabled(false);
+        jPanel2.add(btnAsiento26);
+
+        btnAsiento27.setEnabled(false);
+        jPanel2.add(btnAsiento27);
+
+        btnAsiento28.setEnabled(false);
+        jPanel2.add(btnAsiento28);
+
+        btnAsiento29.setEnabled(false);
+        jPanel2.add(btnAsiento29);
+
+        btnAsiento30.setEnabled(false);
+        jPanel2.add(btnAsiento30);
+
+        btnAsiento31.setEnabled(false);
+        jPanel2.add(btnAsiento31);
+
+        btnAsiento32.setEnabled(false);
+        jPanel2.add(btnAsiento32);
+
+        btnAsiento33.setEnabled(false);
+        jPanel2.add(btnAsiento33);
+
+        btnAsiento34.setEnabled(false);
+        jPanel2.add(btnAsiento34);
+
+        btnAsiento35.setEnabled(false);
+        jPanel2.add(btnAsiento35);
+
+        getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 102)));
+        jPanel5.setMaximumSize(new java.awt.Dimension(930, 100));
+        jPanel5.setMinimumSize(new java.awt.Dimension(930, 100));
+        jPanel5.setPreferredSize(new java.awt.Dimension(930, 100));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 928, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 98, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel5, java.awt.BorderLayout.SOUTH);
+
+        jPanel3.setMinimumSize(new java.awt.Dimension(200, 800));
+        jPanel3.setPreferredSize(new java.awt.Dimension(200, 800));
+        jPanel3.setLayout(new javax.swing.BoxLayout(jPanel3, javax.swing.BoxLayout.Y_AXIS));
+
+        lblAdulto.setText("Adulto");
+        jPanel3.add(lblAdulto);
+
+        jPanel4.setMaximumSize(new java.awt.Dimension(200, 30));
+        jPanel4.setMinimumSize(new java.awt.Dimension(200, 30));
+        jPanel4.setPreferredSize(new java.awt.Dimension(200, 30));
+        jPanel4.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
+
+        jButton1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton1.setText("-");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton1);
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1.setText("0");
+        jPanel4.add(jLabel1);
+
+        jButton2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton2.setText("+");
+        jPanel4.add(jButton2);
+
+        jPanel3.add(jPanel4);
+
+        lblAdultoMayor.setText("AdultoMayor");
+        jPanel3.add(lblAdultoMayor);
+
+        jPanel7.setMaximumSize(new java.awt.Dimension(200, 30));
+        jPanel7.setMinimumSize(new java.awt.Dimension(200, 30));
+        jPanel7.setPreferredSize(new java.awt.Dimension(200, 30));
+        jPanel7.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
+
+        jButton3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton3.setText("-");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel7.add(jButton3);
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel3.setText("0");
+        jPanel7.add(jLabel3);
+
+        jButton4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton4.setText("+");
+        jPanel7.add(jButton4);
+
+        jPanel3.add(jPanel7);
+
+        lblNiños.setText("Niños");
+        jPanel3.add(lblNiños);
+
+        jPanel8.setMaximumSize(new java.awt.Dimension(200, 30));
+        jPanel8.setMinimumSize(new java.awt.Dimension(200, 30));
+        jPanel8.setPreferredSize(new java.awt.Dimension(200, 30));
+        jPanel8.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
+
+        jButton5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton5.setText("-");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton5);
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel4.setText("0");
+        jPanel8.add(jLabel4);
+
+        jButton6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jButton6.setText("+");
+        jPanel8.add(jButton6);
+
+        jPanel3.add(jPanel8);
+
+        getContentPane().add(jPanel3, java.awt.BorderLayout.LINE_END);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -102,7 +384,64 @@ public class SelecciónButacas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAsiento1;
+    private javax.swing.JButton btnAsiento10;
+    private javax.swing.JButton btnAsiento11;
+    private javax.swing.JButton btnAsiento12;
+    private javax.swing.JButton btnAsiento13;
+    private javax.swing.JButton btnAsiento14;
+    private javax.swing.JButton btnAsiento15;
+    private javax.swing.JButton btnAsiento16;
+    private javax.swing.JButton btnAsiento17;
+    private javax.swing.JButton btnAsiento18;
+    private javax.swing.JButton btnAsiento19;
+    private javax.swing.JButton btnAsiento2;
+    private javax.swing.JButton btnAsiento20;
+    private javax.swing.JButton btnAsiento21;
+    private javax.swing.JButton btnAsiento22;
+    private javax.swing.JButton btnAsiento23;
+    private javax.swing.JButton btnAsiento24;
+    private javax.swing.JButton btnAsiento25;
+    private javax.swing.JButton btnAsiento26;
+    private javax.swing.JButton btnAsiento27;
+    private javax.swing.JButton btnAsiento28;
+    private javax.swing.JButton btnAsiento29;
+    private javax.swing.JButton btnAsiento3;
+    private javax.swing.JButton btnAsiento30;
+    private javax.swing.JButton btnAsiento31;
+    private javax.swing.JButton btnAsiento32;
+    private javax.swing.JButton btnAsiento33;
+    private javax.swing.JButton btnAsiento34;
+    private javax.swing.JButton btnAsiento35;
+    private javax.swing.JButton btnAsiento4;
+    private javax.swing.JButton btnAsiento5;
+    private javax.swing.JButton btnAsiento6;
+    private javax.swing.JButton btnAsiento7;
+    private javax.swing.JButton btnAsiento8;
+    private javax.swing.JButton btnAsiento9;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JLabel lblAdulto;
+    private javax.swing.JLabel lblAdultoMayor;
+    public javax.swing.JLabel lblCine;
+    public javax.swing.JLabel lblFecha;
+    public javax.swing.JLabel lblHora;
+    private javax.swing.JLabel lblNiños;
+    public javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }
