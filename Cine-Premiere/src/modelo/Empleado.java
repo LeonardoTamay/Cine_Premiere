@@ -5,23 +5,37 @@
 package modelo;
 
 import Enumeradores.TipoDocumento;
+import Enumeradores.TipoUsuario;
 
 /**
  *
  * @author leona
  */
 public class Empleado extends Persona {
-
+    
+    private String codigoTrabajador;
     private String fechaIngreso;
-    private String sucursal; // Es la unidad comercial que depende legal y operativamente de la sede central
-    private boolean activo;
+    private String salario;
+    private String sede; // Es la unidad comercial que depende legal y operativamente de la sede central
+    private boolean estado;
+    private String direccion;
 
-    public Empleado(String id, String nombre, String apellido, TipoDocumento tipoDoc, int numDoc, String telefono, String email) {
-        super(id, nombre, apellido, tipoDoc, numDoc, telefono, email);
-
+    public Empleado(String codigoTrabajador, String fechaIngreso, String salario, String sede, boolean estado, String direccion, String nombre, String apellido, String fechaNacimiento, TipoDocumento tipoDocumento, int numeroDocumento, String username, String password, TipoUsuario tipoUsuario, boolean activo) {
+        super(nombre, apellido, fechaNacimiento, tipoDocumento, numeroDocumento, username, password, tipoUsuario, activo);
+        this.codigoTrabajador = codigoTrabajador;
         this.fechaIngreso = fechaIngreso;
-        this.sucursal = sucursal;
-        this.activo = true;
+        this.salario = salario;
+        this.sede = sede;
+        this.estado = estado;
+        this.direccion = direccion;
+    }
+
+    public String getCodigoTrabajador() {
+        return codigoTrabajador;
+    }
+
+    public void setCodigoTrabajador(String codigoTrabajador) {
+        this.codigoTrabajador = codigoTrabajador;
     }
 
     public String getFechaIngreso() {
@@ -32,24 +46,40 @@ public class Empleado extends Persona {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public String getSucursal() {
-        return sucursal;
+    public String getSalario() {
+        return salario;
     }
 
-    public void setSucursal(String sucursal) {
-        this.sucursal = sucursal;
+    public void setSalario(String salario) {
+        this.salario = salario;
     }
 
-    public boolean isActivo() {
-        return activo;
+    public String getSede() {
+        return sede;
     }
 
-    public void setActivo(boolean activo) {
-        this.activo = activo;
+    public void setSede(String sede) {
+        this.sede = sede;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     @Override
     public String toString() {
-        return "Empleado{" + "fechaIngreso=" + fechaIngreso + ", sucursal=" + sucursal + ", activo=" + activo + '}';
+        return "Empleado{" + "codigoTrabajador=" + codigoTrabajador + ", fechaIngreso=" + fechaIngreso + ", salario=" + salario + ", sede=" + sede + ", estado=" + estado + ", direccion=" + direccion + '}';
     }
 }

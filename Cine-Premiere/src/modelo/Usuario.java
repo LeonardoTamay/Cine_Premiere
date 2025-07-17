@@ -4,27 +4,26 @@
  */
 package modelo;
 
+import Enumeradores.TipoUsuario;
+
 /**
  *
  * @author leona
  */
-public class Usuario {
+public abstract class Usuario {
 
     private String username;
     private String password;
-    private String tipoUsuario; // CLIENTE, EMPLEADO, ADMINISTRADOR
+    private TipoUsuario tipoUsuario; // CLIENTE, EMPLEADO, ADMINISTRADOR
     private boolean activo;
-    private String idPersona;
 
-    public Usuario(String username, String password, String tipoUsuario, String idPersona) {
+    public Usuario(String username, String password, TipoUsuario tipoUsuario) {
         this.username = username;
         this.password = password;
         this.tipoUsuario = tipoUsuario;
-        this.idPersona = idPersona;
         this.activo = true;
     }
 
-    // Getters y Setters
     public String getUsername() {
         return username;
     }
@@ -41,11 +40,11 @@ public class Usuario {
         this.password = password;
     }
 
-    public String getTipoUsuario() {
+    public TipoUsuario getTipoUsuario() {
         return tipoUsuario;
     }
 
-    public void setTipoUsuario(String tipoUsuario) {
+    public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
 
@@ -55,14 +54,6 @@ public class Usuario {
 
     public void setActivo(boolean activo) {
         this.activo = activo;
-    }
-
-    public String getIdPersona() {
-        return idPersona;
-    }
-
-    public void setIdPersona(String idPersona) {
-        this.idPersona = idPersona;
     }
 
     public boolean validarCredenciales(String username, String password) {

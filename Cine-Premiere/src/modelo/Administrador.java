@@ -4,10 +4,15 @@
  */
 package modelo;
 
+import Enumeradores.TipoUsuario;
+
 /**
  *
  * @author leona
  */
-public class Administrador {
-    
+public class Administrador extends Usuario{
+
+    public Administrador(String username, String password, TipoUsuario tipoUsuario) {
+        super(username, password, tipoUsuario);
+    }
 }

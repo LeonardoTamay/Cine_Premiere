@@ -5,38 +5,27 @@
 package modelo;
 
 import Enumeradores.TipoDocumento;
+import Enumeradores.TipoUsuario;
 
 /**
  *
  * @author leona
  */
-public abstract class Persona {
+public abstract class Persona extends Usuario{
 
-    protected String id;
-    protected String nombre;
-    protected String apellido;
-    protected TipoDocumento tipoDoc;
-    protected int numDoc;
-    protected String telefono;
-    protected String email;
+    private String nombre;
+    private String apellido;
+    private String fechaNacimiento;
+    private TipoDocumento tipoDocumento;
+    private int numeroDocumento;
 
-    public Persona(String id, String nombre, String apellido, TipoDocumento tipoDoc, int numDoc, String telefono, String email) {
-        this.id = id;
+    public Persona(String nombre, String apellido, String fechaNacimiento, TipoDocumento tipoDocumento, int numeroDocumento, String username, String password, TipoUsuario tipoUsuario, boolean activo) {
+        super(username, password, tipoUsuario);
         this.nombre = nombre;
         this.apellido = apellido;
-        this.tipoDoc = tipoDoc;
-        this.numDoc = numDoc;
-        this.telefono = telefono;
-        this.email = email;
-    }
-
-    // Getters y Setters
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+        this.fechaNacimiento = fechaNacimiento;
+        this.tipoDocumento = tipoDocumento;
+        this.numeroDocumento = numeroDocumento;
     }
 
     public String getNombre() {
@@ -55,45 +44,33 @@ public abstract class Persona {
         this.apellido = apellido;
     }
 
-    public TipoDocumento getTipoDoc() {
-        return tipoDoc;
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
     }
 
-    public void setTipoDoc(TipoDocumento tipoDoc) {
-        this.tipoDoc = tipoDoc;
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
 
-    public int getNumDoc() {
-        return numDoc;
+    public TipoDocumento getTipoDocumento() {
+        return tipoDocumento;
     }
 
-    public void setNumDoc(int numDoc) {
-        this.numDoc = numDoc;
+    public void setTipoDocumento(TipoDocumento tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public int getNumeroDocumento() {
+        return numeroDocumento;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getNombreCompleto() {
-        return nombre + " " + apellido;
+    public void setNumeroDocumento(int numeroDocumento) {
+        this.numeroDocumento = numeroDocumento;
     }
 
     @Override
     public String toString() {
-        return "Persona{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", tipoDoc=" + tipoDoc + ", numDoc=" + numDoc + ", telefono=" + telefono + ", email=" + email + '}';
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento=" + fechaNacimiento + ", tipoDocumento=" + tipoDocumento + ", numeroDocumento=" + numeroDocumento + '}';
     }
 }
 
