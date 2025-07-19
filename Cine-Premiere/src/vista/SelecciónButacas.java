@@ -4,7 +4,10 @@
  */
 package vista;
 
+import Enumeradores.EstadoAsiento;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import modelo.Asiento;
 
 /**
  *
@@ -21,6 +24,28 @@ public class SelecciónButacas extends javax.swing.JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
+    
+    public void setDatosPelicula(String titulo, String cine, String fecha, String hora) {
+    // Este método toma los datos como texto y los pone en los JLabels correspondientes.
+        
+    lblTituloData.setText(titulo);
+    lblCineData.setText(cine);
+    lblFechaData.setText(fecha);
+    lblHoraData.setText(hora);
+}
+    
+    private class AsientoVisual {
+    public JButton boton;
+    public Asiento modeloAsiento; // Tu clase del paquete modelo
+    public EstadoAsiento estado;
+
+    public AsientoVisual(JButton boton, Asiento modeloAsiento) {
+        this.boton = boton;
+        this.modeloAsiento = modeloAsiento;
+        this.estado = EstadoAsiento.LIBRE; // Estado inicial por defecto
+    }
+}
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -32,12 +57,19 @@ public class SelecciónButacas extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        panelPantalla = new javax.swing.JPanel();
+        labelPantalla = new javax.swing.JLabel();
+        panelDatosPelicula = new javax.swing.JPanel();
         lblTitulo = new javax.swing.JLabel();
+        lblTituloData = new javax.swing.JLabel();
         lblCine = new javax.swing.JLabel();
+        lblCineData = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
+        lblFechaData = new javax.swing.JLabel();
         lblHora = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        lblHoraData = new javax.swing.JLabel();
+        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 32767));
+        panelButacas = new javax.swing.JPanel();
         btnAsiento1 = new javax.swing.JButton();
         btnAsiento2 = new javax.swing.JButton();
         btnAsiento3 = new javax.swing.JButton();
@@ -73,23 +105,25 @@ public class SelecciónButacas extends javax.swing.JFrame {
         btnAsiento33 = new javax.swing.JButton();
         btnAsiento34 = new javax.swing.JButton();
         btnAsiento35 = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        lblAdulto = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        panelFooter = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        panelTipoEntrada = new javax.swing.JPanel();
+        lblAdulto = new javax.swing.JLabel();
+        panelEntradaAdulto = new javax.swing.JPanel();
+        btnRestaAdulto = new javax.swing.JButton();
+        lblContadorAdulto = new javax.swing.JLabel();
+        btnSumaAdulto = new javax.swing.JButton();
         lblAdultoMayor = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        panelEntradaAdultoM = new javax.swing.JPanel();
+        btnRestaAdultoM = new javax.swing.JButton();
+        lblContadorAdultoM = new javax.swing.JLabel();
+        btnSumaAdultoM = new javax.swing.JButton();
         lblNiños = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        panelEntradaNiños = new javax.swing.JPanel();
+        btnRestaNiños = new javax.swing.JButton();
+        lblContadorNiños = new javax.swing.JLabel();
+        btnSumaNiños = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -98,255 +132,337 @@ public class SelecciónButacas extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(930, 800));
         setPreferredSize(new java.awt.Dimension(930, 800));
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        jPanel1.setMaximumSize(new java.awt.Dimension(300, 800));
-        jPanel1.setMinimumSize(new java.awt.Dimension(300, 800));
-        jPanel1.setPreferredSize(new java.awt.Dimension(300, 800));
-        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.Y_AXIS));
+        panelPantalla.setBackground(new java.awt.Color(102, 102, 102));
+        panelPantalla.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        panelPantalla.setMaximumSize(new java.awt.Dimension(930, 70));
+        panelPantalla.setMinimumSize(new java.awt.Dimension(930, 70));
+        panelPantalla.setPreferredSize(new java.awt.Dimension(930, 70));
 
-        lblTitulo.setText("jLabel3");
-        jPanel1.add(lblTitulo);
+        labelPantalla.setBackground(new java.awt.Color(51, 153, 255));
+        labelPantalla.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        labelPantalla.setForeground(new java.awt.Color(255, 255, 255));
+        labelPantalla.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelPantalla.setText("PANTALLA");
 
-        lblCine.setText("jLabel4");
-        jPanel1.add(lblCine);
+        javax.swing.GroupLayout panelPantallaLayout = new javax.swing.GroupLayout(panelPantalla);
+        panelPantalla.setLayout(panelPantallaLayout);
+        panelPantallaLayout.setHorizontalGroup(
+            panelPantallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelPantallaLayout.createSequentialGroup()
+                .addGap(360, 360, 360)
+                .addComponent(labelPantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(256, Short.MAX_VALUE))
+        );
+        panelPantallaLayout.setVerticalGroup(
+            panelPantallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelPantallaLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(labelPantalla)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
-        lblFecha.setText("jLabel5");
-        jPanel1.add(lblFecha);
+        getContentPane().add(panelPantalla, java.awt.BorderLayout.PAGE_START);
 
-        lblHora.setText("jLabel6");
-        jPanel1.add(lblHora);
+        panelDatosPelicula.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        panelDatosPelicula.setMaximumSize(new java.awt.Dimension(300, 800));
+        panelDatosPelicula.setMinimumSize(new java.awt.Dimension(300, 800));
+        panelDatosPelicula.setPreferredSize(new java.awt.Dimension(300, 800));
+        panelDatosPelicula.setLayout(new java.awt.GridLayout(10, 4, 2, 5));
 
-        getContentPane().add(jPanel1, java.awt.BorderLayout.LINE_START);
+        lblTitulo.setText("Título:");
+        lblTitulo.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 15, 10, 15));
+        panelDatosPelicula.add(lblTitulo);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new java.awt.GridLayout(5, 6, 6, 5));
+        lblTituloData.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        panelDatosPelicula.add(lblTituloData);
+
+        lblCine.setText("Cine:");
+        lblCine.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 15, 10, 15));
+        panelDatosPelicula.add(lblCine);
+
+        lblCineData.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        panelDatosPelicula.add(lblCineData);
+
+        lblFecha.setText("Fecha:");
+        lblFecha.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 15, 10, 15));
+        panelDatosPelicula.add(lblFecha);
+
+        lblFechaData.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        panelDatosPelicula.add(lblFechaData);
+
+        lblHora.setText("Hora:");
+        lblHora.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 15, 10, 15));
+        panelDatosPelicula.add(lblHora);
+
+        lblHoraData.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        panelDatosPelicula.add(lblHoraData);
+        panelDatosPelicula.add(filler1);
+
+        getContentPane().add(panelDatosPelicula, java.awt.BorderLayout.LINE_START);
+
+        panelButacas.setBackground(new java.awt.Color(255, 255, 255));
+        panelButacas.setLayout(new java.awt.GridLayout(5, 6, 6, 5));
 
         btnAsiento1.setEnabled(false);
-        jPanel2.add(btnAsiento1);
+        panelButacas.add(btnAsiento1);
 
         btnAsiento2.setEnabled(false);
-        jPanel2.add(btnAsiento2);
+        panelButacas.add(btnAsiento2);
 
         btnAsiento3.setEnabled(false);
-        jPanel2.add(btnAsiento3);
+        panelButacas.add(btnAsiento3);
 
         btnAsiento4.setEnabled(false);
-        jPanel2.add(btnAsiento4);
+        panelButacas.add(btnAsiento4);
 
         btnAsiento5.setEnabled(false);
-        jPanel2.add(btnAsiento5);
+        panelButacas.add(btnAsiento5);
 
         btnAsiento6.setEnabled(false);
-        jPanel2.add(btnAsiento6);
+        panelButacas.add(btnAsiento6);
 
         btnAsiento7.setEnabled(false);
-        jPanel2.add(btnAsiento7);
+        panelButacas.add(btnAsiento7);
 
         btnAsiento8.setEnabled(false);
-        jPanel2.add(btnAsiento8);
+        panelButacas.add(btnAsiento8);
 
         btnAsiento9.setEnabled(false);
-        jPanel2.add(btnAsiento9);
+        panelButacas.add(btnAsiento9);
 
         btnAsiento10.setEnabled(false);
-        jPanel2.add(btnAsiento10);
+        panelButacas.add(btnAsiento10);
 
         btnAsiento11.setEnabled(false);
-        jPanel2.add(btnAsiento11);
+        panelButacas.add(btnAsiento11);
 
         btnAsiento12.setEnabled(false);
-        jPanel2.add(btnAsiento12);
+        panelButacas.add(btnAsiento12);
 
         btnAsiento13.setEnabled(false);
-        jPanel2.add(btnAsiento13);
+        panelButacas.add(btnAsiento13);
 
         btnAsiento14.setEnabled(false);
-        jPanel2.add(btnAsiento14);
+        panelButacas.add(btnAsiento14);
 
         btnAsiento15.setEnabled(false);
-        jPanel2.add(btnAsiento15);
+        panelButacas.add(btnAsiento15);
 
         btnAsiento16.setEnabled(false);
-        jPanel2.add(btnAsiento16);
+        panelButacas.add(btnAsiento16);
 
         btnAsiento17.setEnabled(false);
-        jPanel2.add(btnAsiento17);
+        panelButacas.add(btnAsiento17);
 
         btnAsiento18.setEnabled(false);
-        jPanel2.add(btnAsiento18);
+        panelButacas.add(btnAsiento18);
 
         btnAsiento19.setEnabled(false);
-        jPanel2.add(btnAsiento19);
+        panelButacas.add(btnAsiento19);
 
         btnAsiento20.setEnabled(false);
-        jPanel2.add(btnAsiento20);
+        panelButacas.add(btnAsiento20);
 
         btnAsiento21.setEnabled(false);
-        jPanel2.add(btnAsiento21);
+        panelButacas.add(btnAsiento21);
 
         btnAsiento22.setEnabled(false);
-        jPanel2.add(btnAsiento22);
+        panelButacas.add(btnAsiento22);
 
         btnAsiento23.setEnabled(false);
-        jPanel2.add(btnAsiento23);
+        panelButacas.add(btnAsiento23);
 
         btnAsiento24.setEnabled(false);
-        jPanel2.add(btnAsiento24);
+        panelButacas.add(btnAsiento24);
 
         btnAsiento25.setEnabled(false);
-        jPanel2.add(btnAsiento25);
+        panelButacas.add(btnAsiento25);
 
         btnAsiento26.setEnabled(false);
-        jPanel2.add(btnAsiento26);
+        panelButacas.add(btnAsiento26);
 
         btnAsiento27.setEnabled(false);
-        jPanel2.add(btnAsiento27);
+        panelButacas.add(btnAsiento27);
 
         btnAsiento28.setEnabled(false);
-        jPanel2.add(btnAsiento28);
+        panelButacas.add(btnAsiento28);
 
         btnAsiento29.setEnabled(false);
-        jPanel2.add(btnAsiento29);
+        panelButacas.add(btnAsiento29);
 
         btnAsiento30.setEnabled(false);
-        jPanel2.add(btnAsiento30);
+        panelButacas.add(btnAsiento30);
 
         btnAsiento31.setEnabled(false);
-        jPanel2.add(btnAsiento31);
+        panelButacas.add(btnAsiento31);
 
         btnAsiento32.setEnabled(false);
-        jPanel2.add(btnAsiento32);
+        panelButacas.add(btnAsiento32);
 
         btnAsiento33.setEnabled(false);
-        jPanel2.add(btnAsiento33);
+        panelButacas.add(btnAsiento33);
 
         btnAsiento34.setEnabled(false);
-        jPanel2.add(btnAsiento34);
+        panelButacas.add(btnAsiento34);
 
         btnAsiento35.setEnabled(false);
-        jPanel2.add(btnAsiento35);
+        panelButacas.add(btnAsiento35);
 
-        getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
+        getContentPane().add(panelButacas, java.awt.BorderLayout.CENTER);
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 102)));
-        jPanel5.setMaximumSize(new java.awt.Dimension(930, 100));
-        jPanel5.setMinimumSize(new java.awt.Dimension(930, 100));
-        jPanel5.setPreferredSize(new java.awt.Dimension(930, 100));
+        panelFooter.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 51, 102)));
+        panelFooter.setMaximumSize(new java.awt.Dimension(930, 100));
+        panelFooter.setMinimumSize(new java.awt.Dimension(930, 100));
+        panelFooter.setPreferredSize(new java.awt.Dimension(930, 100));
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 928, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 98, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel5, java.awt.BorderLayout.SOUTH);
-
-        jPanel3.setMinimumSize(new java.awt.Dimension(200, 800));
-        jPanel3.setPreferredSize(new java.awt.Dimension(200, 800));
-        jPanel3.setLayout(new javax.swing.BoxLayout(jPanel3, javax.swing.BoxLayout.Y_AXIS));
-
-        lblAdulto.setText("Adulto");
-        jPanel3.add(lblAdulto);
-
-        jPanel4.setMaximumSize(new java.awt.Dimension(200, 30));
-        jPanel4.setMinimumSize(new java.awt.Dimension(200, 30));
-        jPanel4.setPreferredSize(new java.awt.Dimension(200, 30));
-        jPanel4.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
-
-        jButton1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jButton1.setText("-");
+        jButton1.setText("Atrás");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton1);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel1.setText("0");
-        jPanel4.add(jLabel1);
+        jButton2.setText("Connfirmar Selección");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jButton2.setText("+");
-        jPanel4.add(jButton2);
+        javax.swing.GroupLayout panelFooterLayout = new javax.swing.GroupLayout(panelFooter);
+        panelFooter.setLayout(panelFooterLayout);
+        panelFooterLayout.setHorizontalGroup(
+            panelFooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFooterLayout.createSequentialGroup()
+                .addContainerGap(669, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(67, 67, 67)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        panelFooterLayout.setVerticalGroup(
+            panelFooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelFooterLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(panelFooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
 
-        jPanel3.add(jPanel4);
+        getContentPane().add(panelFooter, java.awt.BorderLayout.SOUTH);
+
+        panelTipoEntrada.setMinimumSize(new java.awt.Dimension(200, 800));
+        panelTipoEntrada.setPreferredSize(new java.awt.Dimension(200, 800));
+        panelTipoEntrada.setLayout(new javax.swing.BoxLayout(panelTipoEntrada, javax.swing.BoxLayout.Y_AXIS));
+
+        lblAdulto.setText("Adulto");
+        panelTipoEntrada.add(lblAdulto);
+
+        panelEntradaAdulto.setMaximumSize(new java.awt.Dimension(200, 30));
+        panelEntradaAdulto.setMinimumSize(new java.awt.Dimension(200, 30));
+        panelEntradaAdulto.setPreferredSize(new java.awt.Dimension(200, 30));
+        panelEntradaAdulto.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
+
+        btnRestaAdulto.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnRestaAdulto.setText("-");
+        btnRestaAdulto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestaAdultoActionPerformed(evt);
+            }
+        });
+        panelEntradaAdulto.add(btnRestaAdulto);
+
+        lblContadorAdulto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblContadorAdulto.setText("0");
+        panelEntradaAdulto.add(lblContadorAdulto);
+
+        btnSumaAdulto.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnSumaAdulto.setText("+");
+        panelEntradaAdulto.add(btnSumaAdulto);
+
+        panelTipoEntrada.add(panelEntradaAdulto);
 
         lblAdultoMayor.setText("AdultoMayor");
-        jPanel3.add(lblAdultoMayor);
+        panelTipoEntrada.add(lblAdultoMayor);
 
-        jPanel7.setMaximumSize(new java.awt.Dimension(200, 30));
-        jPanel7.setMinimumSize(new java.awt.Dimension(200, 30));
-        jPanel7.setPreferredSize(new java.awt.Dimension(200, 30));
-        jPanel7.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
+        panelEntradaAdultoM.setMaximumSize(new java.awt.Dimension(200, 30));
+        panelEntradaAdultoM.setMinimumSize(new java.awt.Dimension(200, 30));
+        panelEntradaAdultoM.setPreferredSize(new java.awt.Dimension(200, 30));
+        panelEntradaAdultoM.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
 
-        jButton3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jButton3.setText("-");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnRestaAdultoM.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnRestaAdultoM.setText("-");
+        btnRestaAdultoM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnRestaAdultoMActionPerformed(evt);
             }
         });
-        jPanel7.add(jButton3);
+        panelEntradaAdultoM.add(btnRestaAdultoM);
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel3.setText("0");
-        jPanel7.add(jLabel3);
+        lblContadorAdultoM.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblContadorAdultoM.setText("0");
+        panelEntradaAdultoM.add(lblContadorAdultoM);
 
-        jButton4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jButton4.setText("+");
-        jPanel7.add(jButton4);
+        btnSumaAdultoM.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnSumaAdultoM.setText("+");
+        panelEntradaAdultoM.add(btnSumaAdultoM);
 
-        jPanel3.add(jPanel7);
+        panelTipoEntrada.add(panelEntradaAdultoM);
 
         lblNiños.setText("Niños");
-        jPanel3.add(lblNiños);
+        panelTipoEntrada.add(lblNiños);
 
-        jPanel8.setMaximumSize(new java.awt.Dimension(200, 30));
-        jPanel8.setMinimumSize(new java.awt.Dimension(200, 30));
-        jPanel8.setPreferredSize(new java.awt.Dimension(200, 30));
-        jPanel8.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
+        panelEntradaNiños.setMaximumSize(new java.awt.Dimension(200, 30));
+        panelEntradaNiños.setMinimumSize(new java.awt.Dimension(200, 30));
+        panelEntradaNiños.setPreferredSize(new java.awt.Dimension(200, 30));
+        panelEntradaNiños.setLayout(new java.awt.GridLayout(1, 1, 3, 0));
 
-        jButton5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jButton5.setText("-");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnRestaNiños.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnRestaNiños.setText("-");
+        btnRestaNiños.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnRestaNiñosActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton5);
+        panelEntradaNiños.add(btnRestaNiños);
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel4.setText("0");
-        jPanel8.add(jLabel4);
+        lblContadorNiños.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblContadorNiños.setText("0");
+        panelEntradaNiños.add(lblContadorNiños);
 
-        jButton6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jButton6.setText("+");
-        jPanel8.add(jButton6);
+        btnSumaNiños.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnSumaNiños.setText("+");
+        panelEntradaNiños.add(btnSumaNiños);
 
-        jPanel3.add(jPanel8);
+        panelTipoEntrada.add(panelEntradaNiños);
 
-        getContentPane().add(jPanel3, java.awt.BorderLayout.LINE_END);
+        getContentPane().add(panelTipoEntrada, java.awt.BorderLayout.LINE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRestaAdultoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaAdultoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRestaAdultoActionPerformed
+
+    private void btnRestaAdultoMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaAdultoMActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRestaAdultoMActionPerformed
+
+    private void btnRestaNiñosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaNiñosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRestaNiñosActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    
 
     /**
      * @param args the command line arguments
@@ -419,29 +535,38 @@ public class SelecciónButacas extends javax.swing.JFrame {
     private javax.swing.JButton btnAsiento7;
     private javax.swing.JButton btnAsiento8;
     private javax.swing.JButton btnAsiento9;
+    private javax.swing.JButton btnRestaAdulto;
+    private javax.swing.JButton btnRestaAdultoM;
+    private javax.swing.JButton btnRestaNiños;
+    private javax.swing.JButton btnSumaAdulto;
+    private javax.swing.JButton btnSumaAdultoM;
+    private javax.swing.JButton btnSumaNiños;
+    private javax.swing.Box.Filler filler1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
+    private javax.swing.JLabel labelPantalla;
     private javax.swing.JLabel lblAdulto;
     private javax.swing.JLabel lblAdultoMayor;
     public javax.swing.JLabel lblCine;
+    private javax.swing.JLabel lblCineData;
+    private javax.swing.JLabel lblContadorAdulto;
+    private javax.swing.JLabel lblContadorAdultoM;
+    private javax.swing.JLabel lblContadorNiños;
     public javax.swing.JLabel lblFecha;
+    private javax.swing.JLabel lblFechaData;
     public javax.swing.JLabel lblHora;
+    private javax.swing.JLabel lblHoraData;
     private javax.swing.JLabel lblNiños;
     public javax.swing.JLabel lblTitulo;
+    private javax.swing.JLabel lblTituloData;
+    private javax.swing.JPanel panelButacas;
+    private javax.swing.JPanel panelDatosPelicula;
+    private javax.swing.JPanel panelEntradaAdulto;
+    private javax.swing.JPanel panelEntradaAdultoM;
+    private javax.swing.JPanel panelEntradaNiños;
+    private javax.swing.JPanel panelFooter;
+    private javax.swing.JPanel panelPantalla;
+    private javax.swing.JPanel panelTipoEntrada;
     // End of variables declaration//GEN-END:variables
 }

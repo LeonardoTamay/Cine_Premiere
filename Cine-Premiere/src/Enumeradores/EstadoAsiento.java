@@ -11,6 +11,7 @@ package Enumeradores;
 public enum EstadoAsiento {
     LIBRE,
     OCUPADO,
-    EN_MATENIMIENTO,
-    MALOGRADO
+    SELECCIONADO,
+    //EN_MATENIMIENTO,
+    //MALOGRADO
 }
