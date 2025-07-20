@@ -13,16 +13,28 @@ import modelo.Pelicula;
  */
 public class Sala {
 
+    private String codigoSala;
+    private String nombreSala;
     private Pelicula pelicula;
     private int cantidadAsientos;
     private EstadoSala estadoSala;
 
-    public Sala(Pelicula pelicula, int cantidadAsientos, EstadoSala estadoSala) {
+    public Sala(String codSala, String nameSala,Pelicula pelicula, int cantidadAsientos, EstadoSala estadoSala) {
+        this.codigoSala = codSala;
+        this.nombreSala = nameSala;
         this.pelicula = pelicula;
         this.cantidadAsientos = cantidadAsientos;
         this.estadoSala = estadoSala;
     }
 
+    public String getCodigoSala() {
+        return codigoSala;
+    }
+
+    public void setCodigoSala(String codigoSala) {
+        this.codigoSala = codigoSala;
+    }
+    
     public Pelicula getPelicula() {
         return pelicula;
     }

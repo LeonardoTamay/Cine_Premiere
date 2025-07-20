@@ -20,18 +20,9 @@ public class CinePremiere {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        /*Inicio inicio = new  Inicio();
+        Inicio inicio = new  Inicio();
         inicio.setVisible(true);
-        inicio.setLocationRelativeTo(null);*/
-        Pelicula x = new Pelicula("mario bros", "13122005", "180min", "mayores de 5 años", "dibujos");
-        Pelicula v = new Pelicula("bros", "13122005", "180min", "mayores de 5 años", "dibujos");
-        Pelicula z = new Pelicula("luigi", "13122005", "180min", "mayores de 5 años", "dibujos");
-       ListaEnlazada<Pelicula> y = new ListaEnlazada<>();
-       y.addLista(x);
-       y.addLista(v);
-       y.addLista(z);
-       
-       y.showLista();
+        inicio.setLocationRelativeTo(null);
     }
     
 }

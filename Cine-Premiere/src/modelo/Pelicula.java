@@ -9,23 +9,35 @@ package modelo;
  * @author USER
  */
 public class Pelicula {
+    private String codigoPelicula;
     private String nombrePelicula;
     private String fechaEstreno;
     private String duracion;
     private String descripcion;
     private String genero;
+    private String creador;
 
-    public Pelicula(String nombrePelicula, String fechaEstreno, String duracion, String descripcion, String genero) {
+    public Pelicula(String codPelicula, String nombrePelicula, String fechaEstreno, String duracion, String descripcion, String genero, String creador) {
+        this.codigoPelicula = codPelicula;
         this.nombrePelicula = nombrePelicula;
         this.fechaEstreno = fechaEstreno;
         this.duracion = duracion;
         this.descripcion = descripcion;
         this.genero = genero;
+        this.creador = creador;
     }
 
     public Pelicula() {
     }
 
+    public String getCodigoPelicula() {
+        return codigoPelicula;
+    }
+
+    public void setCodigoPelicula(String codigoPelicula) {
+        this.codigoPelicula = codigoPelicula;
+    }
+    
     public String getNombrePelicula() {
         return nombrePelicula;
     }

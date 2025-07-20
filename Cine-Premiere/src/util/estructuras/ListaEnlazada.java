@@ -10,7 +10,7 @@ public class ListaEnlazada<T> {
     }
 
     public boolean isEmpty() {
-        return cabeza.getSiguiente() == null;
+        return cabeza == null;
     }
 
     public int getTamaño() {
@@ -20,7 +20,7 @@ public class ListaEnlazada<T> {
     public void addLista(T dato) {
         NodoLista<T> nuevo = new NodoLista<>(dato);
         if (isEmpty()) {
-            cabeza.setSiguiente(nuevo);
+            cabeza = nuevo;
         }else{
             NodoLista<T> actual = cabeza;
             while (actual.getSiguiente() != null) {                
@@ -29,6 +29,30 @@ public class ListaEnlazada<T> {
             actual.setSiguiente(nuevo);
         }
        tamaño++; 
+    }
+    
+    public boolean deleteLista(T dato) {
+        if (isEmpty()) {
+            return false;
+        }
+        
+        if (cabeza.getDato().equals(dato)) {
+            cabeza.getSiguiente();
+            tamaño--;
+            return true;
+        }
+        
+        NodoLista<T> actual = cabeza;
+        while(actual.getSiguiente() != null && !actual.getDato().equals(dato)) {
+            actual.getSiguiente();
+        }
+        
+        if (actual.getSiguiente() != null) {
+            actual.setSiguiente(actual.getSiguiente().getSiguiente());
+            tamaño--;
+            return true;
+        }
+        return false;
     }
     
     public void showLista() {
