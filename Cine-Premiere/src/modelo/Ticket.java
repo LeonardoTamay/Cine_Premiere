@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo;
 
 import Enumeradores.TipoPago;
@@ -137,6 +133,6 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket{" + "fechaEmision=" + fechaEmision + ", horaEmision=" + horaEmision + ", numeroSala=" + numeroSala + ", nombrePelicula=" + nombrePelicula + ", nombreCliente=" + nombreCliente + ", cantidadTickets=" + cantidadTickets + ", cantidadEntradasNi\u00f1os=" + cantidadEntradasNiños + ", cantidadEntradasAdultos=" + cantidadEntradasAdultos + ", cantidadEntradasMayores60=" + cantidadEntradasMayores60 + ", ubicacionHacientos=" + ubicacionHacientos + ", precioTotal=" + precioTotal + ", tipoPago=" + tipoPago + '}';
+        return "Ticket{" + "fechaEmision=" + fechaEmision + ", horaEmision=" + horaEmision + ", numeroSala=" + numeroSala + ", nombrePelicula=" + nombrePelicula + ", nombreCliente=" + nombreCliente + ", cantidadTickets=" + cantidadTickets + ", cantidadEntradasNiños=" + cantidadEntradasNiños + ", cantidadEntradasAdultos=" + cantidadEntradasAdultos + ", cantidadEntradasMayores60=" + cantidadEntradasMayores60 + ", ubicacionHacientos=" + java.util.Arrays.toString(ubicacionHacientos) + ", precioTotal=" + precioTotal + ", tipoPago=" + tipoPago + '}';
     }
 }

@@ -4,28 +4,30 @@
  */
 package modelo;
 
-import Enumeradores.EstadoAsiento;
+import Enumeradores.EstadoSala;
+import modelo.Pelicula;
 
 /**
  *
  * @author USER
  */
 public class Sala {
-    private String pelicula;
-    private int cantidadAsientos;
-    private EstadoAsiento estadoSala;
 
-    public Sala(String pelicula, int cantidadAsientos, EstadoAsiento estadoSala) {
+    private Pelicula pelicula;
+    private int cantidadAsientos;
+    private EstadoSala estadoSala;
+
+    public Sala(Pelicula pelicula, int cantidadAsientos, EstadoSala estadoSala) {
         this.pelicula = pelicula;
         this.cantidadAsientos = cantidadAsientos;
         this.estadoSala = estadoSala;
     }
 
-    public String getPelicula() {
+    public Pelicula getPelicula() {
         return pelicula;
     }
 
-    public void setPelicula(String pelicula) {
+    public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
     }
 
@@ -37,12 +39,12 @@ public class Sala {
         this.cantidadAsientos = cantidadAsientos;
     }
 
-    public EstadoAsiento getEstadoSala() {
+    public EstadoSala getEstadoSala() {
         return estadoSala;
     }
 
-    public void setEstadoSala(EstadoAsiento estadoAsiento) {
-        this.estadoSala = estadoAsiento;
+    public void setEstadoSala(EstadoSala estadoSala) {
+        this.estadoSala = estadoSala;
     }
 
     @Override
@@ -50,3 +52,5 @@ public class Sala {
         return "Sala{" + "pelicula=" + pelicula + ", cantidadAsientos=" + cantidadAsientos + ", estadoSala=" + estadoSala + '}';
     }
 }
+
+    
